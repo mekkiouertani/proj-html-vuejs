@@ -45,4 +45,28 @@ export const store = reactive({
       active: false,
     },
   ],
+  FooterList: [
+    {
+      title: "MyAccount",
+      listItem: ["My account", "Chechout", "Cart", "Packages", "AddCart"],
+    },
+    {
+      title: "Quick Links",
+      listItem: ["Home", "About Us", "Blog", "Contact", "Refund & Returns"],
+    },
+  ],
+  footerCredits: [
+    {
+      title: " New Jersey, Usa",
+      icon: "fa-solid fa-location-dot",
+    },
+    {
+      title: " +1 (234) 567 89 10",
+      icon: "fa-solid fa-phone",
+    },
+    {
+      title: "example@example.com",
+      icon: "fa-regular fa-envelope",
+    },
+  ],
 });
