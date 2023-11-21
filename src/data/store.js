@@ -79,4 +79,36 @@ export const store = reactive({
       title: "The Easiest Way To Buy And Sell Veichles",
     },
   ],
+  cardSearchMain: [
+    {
+      img: "../../images/cabrio.jpg",
+      name: "Cabrio",
+      listings: 3,
+    },
+    {
+      img: "../../images/coupe.jpg",
+      name: "Cabrio",
+      listings: 0,
+    },
+    {
+      img: "../../images/hatchback.jpg",
+      name: "Hatchback",
+      listings: 2,
+    },
+    {
+      img: "../../images/pickup.jpg",
+      name: "Pick Up",
+      listings: 0,
+    },
+    {
+      img: "../../images/sedan.jpg",
+      name: "Sedan",
+      listings: 3,
+    },
+    {
+      img: "../../images/suv.jpg",
+      name: "Suv",
+      listings: 3,
+    },
+  ],
 });

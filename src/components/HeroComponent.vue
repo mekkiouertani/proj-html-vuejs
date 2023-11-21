@@ -63,11 +63,12 @@ section {
   .carousel-item {
     height: 100%;
     width: 100%;
+    padding: 10px 0;
+    background-color: black;
     img {
-      height: 120%;
-      width: 120%;
+      height: 100%;
+      width: 100%;
       object-fit: cover;
-      object-position: top;
     }
   }
 }
