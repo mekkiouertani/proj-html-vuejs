@@ -92,7 +92,7 @@ ul {
   background-color: blue;
   button,
   input {
-    height: 50px;
+    height: 70px;
   }
   button {
     background-color: white;

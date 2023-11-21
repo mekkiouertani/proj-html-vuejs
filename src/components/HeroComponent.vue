@@ -1,5 +1,5 @@
 <template>
-  <section id="hero">
+  <section id="hero" class="text-white">
     <div
       id="carouselExampleAutoplaying"
       class="carousel slide position-relative"
@@ -7,15 +7,20 @@
     >
       <div class="carousel-inner">
         <div
-          class="carousel-item active"
-          v-for="(img, index) in store.heroImages"
+          class="carousel-item active position-relative"
+          v-for="(el, index) in store.heroImages"
         >
-          <h2 class="position-absolute">titolo</h2>
-          <img :src="img" class="d-block w-100" alt="auto" />
+          <!-- title -->
+          <div class="position-absolute">
+            <h2 clas>{{ el.title }}</h2>
+            <h5>Find the right prince and dealer.</h5>
+            <p>Learn More <i class="fa-solid fa-arrow-right"></i></p>
+          </div>
+          <img :src="el.img" class="d-block w-100" alt="auto" />
         </div>
       </div>
       <button
-        class="carousel-control-prev position-absolute"
+        class="carousel-control-prev"
         type="button"
         data-bs-target="#carouselExampleAutoplaying"
         data-bs-slide="prev"
@@ -24,7 +29,7 @@
         <span class="visually-hidden">Previous</span>
       </button>
       <button
-        class="carousel-control-next position-absolute"
+        class="carousel-control-next"
         type="button"
         data-bs-target="#carouselExampleAutoplaying"
         data-bs-slide="next"
@@ -59,11 +64,33 @@ section {
     height: 100%;
     width: 100%;
     img {
-      height: 100%;
-      width: 100%;
+      height: 120%;
+      width: 120%;
       object-fit: cover;
       object-position: top;
     }
+  }
+}
+.position-absolute {
+  top: 35%;
+  left: 20%;
+  font-weight: 400;
+  max-width: 35%;
+  font-weight: 800;
+  font-size: 1.2em;
+  h2 {
+    font-size: 3em;
+    font-weight: 800;
+  }
+  h5 {
+    font-weight: 800;
+  }
+  p {
+    font-weight: 800;
+    background-color: black;
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 5px;
   }
 }
 </style>

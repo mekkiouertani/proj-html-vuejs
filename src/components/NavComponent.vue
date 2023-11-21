@@ -91,7 +91,7 @@ export default {
 }
 
 .nav-logo {
-  width: 200px;
+  width: 250px;
 
   img {
     width: 100%;

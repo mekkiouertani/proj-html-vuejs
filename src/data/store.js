@@ -70,9 +70,13 @@ export const store = reactive({
     },
   ],
   heroImages: [
-    "../../images/slider-autocar-5.jpg",
-    "../../images/slider-autocar-6.jpg",
-    "../../images/slider-autocar-5.jpg",
-    "../../images/slider-autocar-6.jpg",
+    {
+      img: "../../images/slider-autocar-5.jpg",
+      title: "Buy and Sell Your Car At Its Value",
+    },
+    {
+      img: "../../images/slider-autocar-6.jpg",
+      title: "The Easiest Way To Buy And Sell Veichles",
+    },
   ],
 });
