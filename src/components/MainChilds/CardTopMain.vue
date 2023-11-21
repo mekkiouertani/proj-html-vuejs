@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: "SearchMain",
+  name: "CardTopMain",
   props: {
     img: String,
     title: String,

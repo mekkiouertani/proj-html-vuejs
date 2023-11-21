@@ -111,4 +111,36 @@ export const store = reactive({
       listings: 3,
     },
   ],
+  topMainSelect: [
+    {
+      title: "All Categories",
+      options: ["Cabrio", "Coupe", "Hatchback", "Pick Up", "Sedan", "Suv"],
+    },
+    {
+      title: "Brand",
+      options: [
+        "Audi",
+        "BMW",
+        "Ford",
+        "Hyndai",
+        "Opel",
+        "Seat",
+        "Skoda",
+        "Toyota",
+        "Volswagen",
+      ],
+    },
+    {
+      title: "Fuel Type",
+      options: ["Diesel", "Electric", "Gasoline", "LPG"],
+    },
+    {
+      title: "Tranmission",
+      options: ["Automatic", "Manual", "Semiautomatic", "Touch"],
+    },
+    {
+      title: "Status",
+      options: ["2nd Hand", "By Owner", "From the Gallery", "New"],
+    },
+  ],
 });
