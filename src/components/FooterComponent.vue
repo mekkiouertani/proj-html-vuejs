@@ -10,8 +10,8 @@
         <div
           class="right col-12 col-md-4 col-lg-4 d-flex justify-content-between"
         >
-          <div id="part-1">parte 1</div>
-          <div id="part-3">parte 2</div>
+          <div id="part-1">RIGHT parte 1</div>
+          <div id="part-3">RIGHT parte 2</div>
         </div>
       </div>
       <p class="text-center">2023 autocar</p>

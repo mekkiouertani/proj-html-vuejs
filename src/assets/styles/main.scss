@@ -7,6 +7,9 @@ $fa-font-path: '../webfonts';
 @import '@fortawesome/fontawesome-free/scss/regular.scss';
 @import '@fortawesome/fontawesome-free/scss/brands.scss';
 
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
 body{
   background-color: $primary-color;
+  font-family: 'Satoshi', sans-serif;
 }
