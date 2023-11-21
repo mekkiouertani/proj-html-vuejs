@@ -41,16 +41,35 @@
       />
     </div>
     <!-- END CARD -->
+    <!-- BIG CARDS -->
+    <div class="row mt-5 gy-3">
+      <BigCards
+        class="col-12 col-md-4 col-lg-3"
+        v-for="car in store.carsShowcase"
+        :name="car.name"
+        :model="car.model"
+        :type="car.type"
+        :price="car.price"
+        :fuel="car.fuel"
+        :img="car.img"
+      />
+      <p class="text-white text-center my-5">
+        <span class="bg-black py-4 px-5 fw-bold"
+          >Show All Cars <i class="fa-solid fa-arrow-right"></i
+        ></span>
+      </p>
+    </div>
   </div>
 </template>
 
 <script>
 import { store } from "../data/store.js";
 import CardTopMain from "./MainChilds/CardTopMain.vue";
+import BigCards from "./MainChilds/BigCards.vue";
 
 export default {
   name: "MainComponent",
-  components: { CardTopMain },
+  components: { CardTopMain, BigCards },
   data() {
     return {
       store,
@@ -60,14 +79,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-span {
-  background-color: red;
-}
-
-input {
-  display: inline-block !important;
-}
-
 select,
 input,
 button {
