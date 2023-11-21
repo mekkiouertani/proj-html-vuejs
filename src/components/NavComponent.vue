@@ -87,6 +87,7 @@ export default {
   z-index: 9999;
   font-weight: bold;
   box-shadow: 0px 15px 10px -15px #111;
+  background-color: white;
 }
 
 .nav-logo {

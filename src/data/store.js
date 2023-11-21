@@ -69,4 +69,10 @@ export const store = reactive({
       icon: "fa-regular fa-envelope",
     },
   ],
+  heroImages: [
+    "../../images/slider-autocar-5.jpg",
+    "../../images/slider-autocar-6.jpg",
+    "../../images/slider-autocar-5.jpg",
+    "../../images/slider-autocar-6.jpg",
+  ],
 });

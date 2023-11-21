@@ -9,6 +9,18 @@ $fa-font-path: '../webfonts';
 
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 
+::-webkit-scrollbar {
+  width: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  }
+
 body{
   background-color: $primary-color;
   font-family: 'Satoshi', sans-serif;

@@ -1,6 +1,6 @@
 <template>
-  <NavComponent />
-  <HeroComponent />
+  <NavComponent id="nav" />
+  <HeroComponent id="hero" />
   <MainComponent />
   <FooterComponent />
 </template>
