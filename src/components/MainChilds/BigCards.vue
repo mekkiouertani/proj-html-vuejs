@@ -8,11 +8,14 @@
           class="fa-solid fa-check bg-black text-white fs-6 p-1 rounded-circle"
         ></i>
       </h5>
-      <p class="card-text">{{ type }}</p>
+      <p class="card-text position-relative">{{ type }}</p>
       <p class="d-flex flex-wrap">
         <span><i class="fa-solid fa-dollar-sign"></i> {{ price }}.000</span>
         <span><i class="fa-solid fa-car"></i> {{ name }}</span>
         <span><i class="fa-solid fa-gas-pump"></i> {{ fuel }}</span>
+        <i
+          class="fs-4 fa-solid fa-heart position-absolute end-0 bottom-0 m-2 text-secondary"
+        ></i>
       </p>
     </div>
   </div>

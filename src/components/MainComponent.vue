@@ -4,7 +4,7 @@
     <div class="d-flex flex-wrap w-100 justify-content-between">
       <input
         type="text"
-        class="text-secondary text-center my-2"
+        class="text-secondary text-center mx-3 my-2"
         placeholder="Keywords"
       />
       <input
@@ -27,7 +27,7 @@
           {{ options }}
         </option>
       </select>
-      <button class="my-2 bg-black text-white">Search</button>
+      <button class="my-2 bg-black text-white mx-3">Search</button>
     </div>
     <!-- END SELECT OPTIONS -->
     <!-- CARD -->
@@ -59,6 +59,9 @@
         ></span>
       </p>
     </div>
+    <!-- END BIG CARDS -->
+    <!-- BUY CARS -->
+    <BuyCars />
   </div>
 </template>
 
@@ -66,10 +69,11 @@
 import { store } from "../data/store.js";
 import CardTopMain from "./MainChilds/CardTopMain.vue";
 import BigCards from "./MainChilds/BigCards.vue";
+import BuyCars from "./MainChilds/BuyCars.vue";
 
 export default {
   name: "MainComponent",
-  components: { CardTopMain, BigCards },
+  components: { CardTopMain, BigCards, BuyCars },
   data() {
     return {
       store,
