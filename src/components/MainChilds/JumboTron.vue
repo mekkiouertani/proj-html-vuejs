@@ -12,11 +12,11 @@
             ></span>
           </p>
           <h2 class="text-center">What are Our Customer Sayng ?</h2>
-          <h6 class="text-center">Opinion from our happy customers</h6>
+          <h6 class="text-center mb-5 x">Opinion from our happy customers</h6>
         </div>
         <Carousel
           id="gallery"
-          :items-to-show="2"
+          :items-to-show="3"
           :wrap-around="false"
           v-model="currentSlide"
         >
@@ -89,6 +89,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.fa-thumbs-up {
+  font-size: 4em;
+  padding-top: 20px;
+}
 .fa-quote-right {
   opacity: 0.2;
   font-size: 100px;
@@ -102,13 +106,10 @@ export default {
   height: calc(100vh - 100px);
   background-image: url(../../images/comment-bg-autocar.jpg);
 }
-/* .card {
-  max-width: 300px !important;
-} */
 
-/* .card {
-  height: 350px;
-} */
+.card {
+  max-width: 300px;
+}
 .box-img {
   padding: 20px;
   margin: 20px auto;
@@ -118,7 +119,7 @@ export default {
 .carousel__item {
   width: 90%;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   p.card-text {
     font-size: 0.8em;
   }

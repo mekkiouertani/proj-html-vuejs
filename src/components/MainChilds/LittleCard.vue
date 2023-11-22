@@ -1,12 +1,12 @@
 <template>
-  <section id="top-text" class="my-3">
+  <section id="top-text" class="my-3 mb-2">
     <div class="thumb-up">
       <img src="../../images/thumb-up-in-a-circle.png" alt="" />
     </div>
     <h3>Resent Articles</h3>
     <h6>Useful infromation about car</h6>
   </section>
-  <Carousel :itemsToShow="2" :wrapAround="true" :transition="500">
+  <Carousel :itemsToShow="3" :wrapAround="true" :transition="500">
     <Slide v-for="car in store.cardCars" :key="index">
       <div class="carousel__item">
         <div class="card p-3">

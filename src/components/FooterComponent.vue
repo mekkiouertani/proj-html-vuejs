@@ -74,9 +74,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* section {
-  margin-top: 600px;
-} */
+section {
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
 ul {
   list-style: none;
 }
