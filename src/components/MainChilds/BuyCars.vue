@@ -75,7 +75,7 @@
           </p>
         </div>
       </div>
-      <span class="bg-black py-4 px-5 fw-bold text-white my-3"
+      <span class="bg-black py-4 px-5 fw-bold text-white my-3 cp"
         >Get to know us <i class="fa-solid fa-arrow-right"></i
       ></span>
     </div>

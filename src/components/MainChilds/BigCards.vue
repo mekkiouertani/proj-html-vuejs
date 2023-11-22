@@ -41,5 +41,6 @@ span {
 }
 .card {
   border-right: 1px solid lightgrey !important;
+  cursor: pointer;
 }
 </style>

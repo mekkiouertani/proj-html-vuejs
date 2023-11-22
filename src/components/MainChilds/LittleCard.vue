@@ -6,10 +6,15 @@
     <h3>Resent Articles</h3>
     <h6>Useful infromation about car</h6>
   </section>
-  <Carousel :itemsToShow="3" :wrapAround="true" :transition="500">
+  <Carousel
+    :autoplay="2000"
+    :itemsToShow="3"
+    :wrapAround="true"
+    :transition="500"
+  >
     <Slide v-for="car in store.cardCars" :key="index">
       <div class="carousel__item">
-        <div class="card p-3">
+        <div class="card p-3 cp">
           <img :src="car.img" class="card-img-top" :alt="car.title" />
           <span>06.07.2022 - Auto Car</span>
           <div class="card-body">
@@ -76,6 +81,11 @@ span {
       height: 100%;
       object-fit: cover;
     }
+  }
+}
+@media screen and (max-width: 992px) {
+  .card {
+    width: 200px;
   }
 }
 </style>

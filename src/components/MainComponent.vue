@@ -62,7 +62,7 @@
         :img="car.img"
       />
       <p class="text-white text-center my-5">
-        <span class="bg-black py-4 px-5 fw-bold"
+        <span class="bg-black py-4 px-5 fw-bold cp"
           >Show All Cars <i class="fa-solid fa-arrow-right"></i
         ></span>
       </p>

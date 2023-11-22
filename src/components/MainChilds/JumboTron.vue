@@ -14,15 +14,10 @@
           <h2 class="text-center">What are Our Customer Sayng ?</h2>
           <h6 class="text-center mb-5 x">Opinion from our happy customers</h6>
         </div>
-        <Carousel
-          id="gallery"
-          :items-to-show="3"
-          :wrap-around="false"
-          v-model="currentSlide"
-        >
+        <Carousel :autoplay="2000" :items-to-show="2.5" :wrap-around="true">
           <Slide v-for="user in store.user" :key="user">
-            <div class="carousel__item" @click="slideTo(user - 1)">
-              <div class="card p-4">
+            <div class="carousel__item cp" @click="slideTo(user - 1)">
+              <div class="card p-4 cp" style="width: 18rem">
                 <p class="card-text position-relative">
                   {{ user.text }}
                   <i class="fa-solid fa-quote-right position-absolute"></i>
@@ -66,7 +61,7 @@
 </template>
 
 <script>
-import { Carousel, Slide } from "vue3-carousel";
+import { Carousel, Slide, Navigation } from "vue3-carousel";
 import LittleCard from "./LittleCard.vue";
 import "vue3-carousel/dist/carousel.css";
 import { store } from "./../../data/store.js";
@@ -113,11 +108,18 @@ export default {
 .box-img {
   padding: 20px;
   margin: 20px auto;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 .carousel__item {
   width: 90%;
+}
+@media screen and (max-width: 1140px) {
 }
 @media screen and (max-width: 600px) {
   p.card-text {

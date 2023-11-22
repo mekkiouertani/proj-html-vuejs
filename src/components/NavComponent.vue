@@ -39,13 +39,20 @@
             </div>
             <p class="mx-2 tit long">My account</p>
           </button>
+          <i
+            class="fa-solid fa-bars fs-1"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            role="button"
+            aria-controls="offcanvasExample"
+          ></i>
           <button class="d-flex align-items-center">
             <div class="imgg">
               <img src="../images/add.png" alt="png" class="mbb" />
             </div>
             <p class="mx-3 tit">Add</p>
           </button>
-          <!--   <i class="fa-solid fa-bars"></i> -->
+
           <!-- <span class="d-flex align-items-center"
             ><div class="imgg">
               <img src="../images/headphones.png" alt="png" class="mbb" />
@@ -56,6 +63,43 @@
       </div>
     </div>
   </nav>
+  <!-- CANVA -->
+  <div
+    class="offcanvas offcanvas-start"
+    tabindex="-1"
+    id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel"
+  >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you
+        have chosen. Like, text, images, lists, etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+        >
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -74,12 +118,15 @@ export default {
 .navbar {
   min-height: 100px;
   position: fixed;
-  z-index: 9999;
+  z-index: 9000;
   font-weight: bold;
   box-shadow: 0px 15px 10px -15px #111;
   background-color: white;
 }
-
+.offcanvas {
+  z-index: 9999;
+  width: 20%;
+}
 .nav-logo {
   width: 250px;
 
@@ -111,10 +158,12 @@ button {
 }
 .tit {
   margin-top: 16px;
-  min-width: 100px;
   /* .long {
     min-width: 70px;
   } */
+}
+.long {
+  min-width: 100px;
 }
 @media screen and (max-width: 1440px) {
   .imgg {
