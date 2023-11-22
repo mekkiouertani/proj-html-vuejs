@@ -3,6 +3,7 @@
     <!-- SELECT OPTIONS -->
     <div class="d-flex flex-wrap w-100 justify-content-between">
       <input
+        v-model="searchCar"
         type="text"
         class="text-secondary text-center mx-3 my-2"
         placeholder="Keywords"
@@ -23,6 +24,7 @@
         <option
           :value="options"
           v-for="(options, index) in store.topMainSelect[index].options"
+          :key="index"
         >
           {{ options }}
         </option>
@@ -34,7 +36,7 @@
     <div class="row mt-5">
       <CardTopMain
         class="col-12 col-md-4 col-lg-2"
-        v-for="car in store.cardSearchMain"
+        v-for="car in filteredCars"
         :title="car.name"
         :img="car.img"
         :listings="car.listings"
@@ -77,7 +79,17 @@ export default {
   data() {
     return {
       store,
+      searchCar: "",
     };
+  },
+  methods: {},
+  computed: {
+    filteredCars() {
+      const lowercasesearchCar = this.searchCar.toLowerCase();
+      return this.store.cardSearchMain.filter((car) =>
+        car.name.toLowerCase().includes(lowercasesearchCar)
+      );
+    },
   },
 };
 </script>
