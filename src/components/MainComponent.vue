@@ -36,7 +36,7 @@
     <div class="row mt-5">
       <CardTopMain
         class="col-12 col-md-4 col-lg-2"
-        v-for="car in filteredCars"
+        v-for="car in store.cardSearchMain"
         :title="car.name"
         :img="car.img"
         :listings="car.listings"
@@ -45,9 +45,15 @@
     <!-- END CARD -->
     <!-- BIG CARDS -->
     <div class="row mt-5 gy-3">
+      <h6
+        v-show="filteredCars.length <= 0"
+        class="fs-1 bg-black text-white w-25 border-radius"
+      >
+        No cars founded!
+      </h6>
       <BigCards
         class="col-12 col-md-4 col-lg-3"
-        v-for="car in store.carsShowcase"
+        v-for="car in filteredCars"
         :name="car.name"
         :model="car.model"
         :type="car.type"
@@ -65,6 +71,11 @@
     <!-- BUY CARS -->
     <BuyCars />
   </div>
+  <!-- END CONTAINER -->
+  <JumboTron />
+  <div class="container">
+    <LittleCard />
+  </div>
 </template>
 
 <script>
@@ -72,10 +83,12 @@ import { store } from "../data/store.js";
 import CardTopMain from "./MainChilds/CardTopMain.vue";
 import BigCards from "./MainChilds/BigCards.vue";
 import BuyCars from "./MainChilds/BuyCars.vue";
+import JumboTron from "./MainChilds/JumboTron.vue";
+import LittleCard from "./MainChilds/LittleCard.vue";
 
 export default {
   name: "MainComponent",
-  components: { CardTopMain, BigCards, BuyCars },
+  components: { CardTopMain, BigCards, BuyCars, JumboTron, LittleCard },
   data() {
     return {
       store,
@@ -86,7 +99,7 @@ export default {
   computed: {
     filteredCars() {
       const lowercasesearchCar = this.searchCar.toLowerCase();
-      return this.store.cardSearchMain.filter((car) =>
+      return this.store.carsShowcase.filter((car) =>
         car.name.toLowerCase().includes(lowercasesearchCar)
       );
     },

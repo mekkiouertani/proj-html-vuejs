@@ -209,4 +209,49 @@ export const store = reactive({
       fuel: "Diesel",
     },
   ],
+  user: [
+    {
+      id: "1",
+      name: "Christina",
+      img: "../../images/testimonial2-1.png",
+      text: "One of the quality websites I apply to rent a car. There are hundreds of different tools.",
+    },
+    {
+      id: "2",
+      name: "Adam",
+      img: "../../public/images/man1.png",
+      text: " We are a gallery vehicle dealer. Before we met this site, our sales were sluggish.",
+    },
+    {
+      id: "3",
+      name: "Elizabeth",
+      img: "../../images/testimonial4-1.png",
+      text: " A fast and reliable vehicle selling site. Rare quality website with hundreds of model vehicles.",
+    },
+    {
+      id: "4",
+      name: "Robert",
+      img: "../../public/images/man2.png",
+      text: "I was trying to sell my car. And I put it here and sold it for more than it was worth.",
+    },
+  ],
+  cardCars: [
+    {
+      img: "../../public/images/news-autocar-1-300x180.jpg",
+      title: "How solid is Audi?",
+      text: "According to Euro NCAP data with different test organizations, there",
+    },
+    {
+      img: "../../public/images/news-autocar-6-300x180.jpg",
+      title: "What Brand is Skoda?",
+      text: "Skoda is one of the leading automotive manufacturers on the",
+    },
+  ],
+
+  /*  formData: {
+    name: "",
+    model: "",
+    type: "",
+    fuel: "",
+  }, */
 });

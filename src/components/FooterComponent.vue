@@ -4,17 +4,19 @@
       <div class="row">
         <!-- LEFT -->
         <!-- logo left -->
-        <div class="left col-12 col-md-4 col-lg-4">
-          <div class="logo">
-            <img src="../images/logo-footer-autocar11.png" alt="" />
+        <div class="left col-md-12 col-lg-3 mt-5">
+          <div class="med justify-content-between align-items-center">
+            <div class="logo mb-3">
+              <img src="../images/logo-footer-autocar11.png" alt="" />
+            </div>
+            <!-- ul left -->
+            <ul>
+              <li v-for="el in store.footerCredits">
+                <span><i :class="el.icon"></i></span>
+                {{ el.title }}
+              </li>
+            </ul>
           </div>
-          <!-- ul left -->
-          <ul>
-            <li v-for="el in store.footerCredits">
-              <span><i :class="el.icon"></i></span>
-              {{ el.title }}
-            </li>
-          </ul>
           <!-- icon left -->
           <div class="text-center">
             <i class="px-3 fs-3 fa-brands fa-facebook"></i>
@@ -23,7 +25,7 @@
           </div>
         </div>
         <!-- MIDDLE -->
-        <div class="middle col-12 col-md-4 col-lg-4">
+        <div class="middle col-md-12 col-lg-4 mt-5">
           <div class="d-flex flex-column justify-content-center">
             <h3>Join Our Newsletter</h3>
             <p>Subscribe to be informed about our services and products.</p>
@@ -35,7 +37,7 @@
         </div>
         <!-- RIGHT -->
         <div
-          class="right col-12 col-md-4 col-lg-4 d-flex justify-content-between"
+          class="mt-5 right col-md-12 col-lg-5 d-flex justify-content-between"
         >
           <div id="part-1">
             <ul class="d-flex flex-wrap list-group-item">
@@ -72,12 +74,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+/* section {
+  margin-top: 600px;
+} */
 ul {
   list-style: none;
 }
 .left {
-  width: 20%;
-  background-color: green;
   .logo {
     width: 200px;
     img {
@@ -89,7 +92,6 @@ ul {
 }
 .middle {
   flex-grow: 1;
-  background-color: blue;
   button,
   input {
     height: 70px;
@@ -103,8 +105,10 @@ ul {
     padding: 20px;
   }
 }
-.right {
-  background-color: red;
-  width: 40%;
+@media screen and (max-width: 1000px) {
+  .med {
+    display: flex !important;
+    align-items: top !important;
+  }
 }
 </style>
