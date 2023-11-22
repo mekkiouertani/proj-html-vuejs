@@ -16,7 +16,7 @@
         </div>
         <Carousel
           id="gallery"
-          :items-to-show="3"
+          :items-to-show="2"
           :wrap-around="false"
           v-model="currentSlide"
         >
@@ -105,25 +105,10 @@ export default {
 /* .card {
   max-width: 300px !important;
 } */
-.top-text {
-  p {
-    font-size: 70px;
-    span {
-      margin-top: -20px;
-      font-size: 0.4em;
-    }
-  }
-  h2 {
-    font-weight: 900;
-  }
-  h6 {
-    font-weight: 300;
-    margin-bottom: 50px;
-  }
-}
-.card {
+
+/* .card {
   height: 350px;
-}
+} */
 .box-img {
   padding: 20px;
   margin: 20px auto;
@@ -133,28 +118,9 @@ export default {
 .carousel__item {
   width: 90%;
 }
-
-#top-text {
-  color: black;
-  h3 {
-    text-align: center;
-    font-weight: 600;
-  }
-  h6 {
-    text-align: center;
-  }
-  .thumb-up {
-    margin: auto;
-    height: 80px;
-    width: 80px;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+@media screen and (min-width: 600px) {
+  p.card-text {
+    font-size: 0.8em;
   }
 }
-/* section {
-  height: 100vh;
-} */
 </style>
