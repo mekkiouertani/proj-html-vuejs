@@ -12,7 +12,7 @@
         >
           <!-- title -->
           <div class="titlee position-absolute">
-            <h2 clas>{{ el.title }}</h2>
+            <h2 class="d-sm-none d-md-block">{{ el.title }}</h2>
             <h5>Find the right prince and dealer.</h5>
             <p>Learn More <i class="fa-solid fa-arrow-right"></i></p>
           </div>
@@ -73,7 +73,7 @@ section {
   }
 }
 .position-absolute {
-  top: 35%;
+  top: 30%;
   left: 20%;
   font-weight: 400;
   max-width: 35%;
@@ -94,21 +94,13 @@ section {
     border-radius: 5px;
   }
 }
-@media (min-width: 300px) {
+
+@media (max-width: 400px) {
   h2 {
     font-size: 0.8em;
   }
   .position-absolute {
     top: 20px !important;
-  }
-}
-@media (min-width: 500px) {
-  h2 {
-    font-size: 1em;
-  }
-  .position-absolute {
-    top: 35% !important;
-    left: 20%;
   }
 }
 </style>

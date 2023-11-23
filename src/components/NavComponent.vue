@@ -54,7 +54,7 @@
               role="button"
               aria-controls="offcanvasExample"
             ></i>
-            <button class="d-flex align-items-center">
+            <button class="d-flex align-items-center d-md-none d-md-flex">
               <div class="imgg">
                 <img src="../images/headphones.png" alt="png" class="mbb" />
               </div>
