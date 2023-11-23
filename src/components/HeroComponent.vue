@@ -12,11 +12,11 @@
         >
           <!-- title -->
           <div class="titlee position-absolute">
-            <h2 class="d-sm-none d-md-block">{{ el.title }}</h2>
+            <h2 class="d-none d-md-block">{{ el.title }}</h2>
             <h5>Find the right prince and dealer.</h5>
             <p>Learn More <i class="fa-solid fa-arrow-right"></i></p>
           </div>
-          <img :src="el.img" class="d-block w-100" alt="auto" />
+          <img :src="el.img" class="d-block w-100 h-100" alt="auto" />
         </div>
       </div>
       <button
@@ -95,12 +95,12 @@ section {
   }
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   h2 {
     font-size: 0.8em;
   }
   .position-absolute {
     top: 20px !important;
   }
-}
+} */
 </style>
