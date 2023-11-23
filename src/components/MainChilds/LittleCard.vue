@@ -12,7 +12,7 @@
     :wrapAround="true"
     :transition="500"
   >
-    <Slide v-for="car in store.cardCars" :key="index">
+    <Slide v-for="car in store.cardCars" :key="car">
       <div class="carousel__item">
         <div class="card p-3 cp">
           <img :src="car.img" class="card-img-top" :alt="car.title" />

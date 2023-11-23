@@ -28,4 +28,9 @@ body{
 }
 .cp{
   cursor: pointer;
+} 
+ .fa-heart{
+  &:hover{
+    color: green !important;
+  }
 }

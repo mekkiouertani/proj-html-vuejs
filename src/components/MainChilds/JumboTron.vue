@@ -14,16 +14,22 @@
           <h2 class="text-center">What are Our Customer Sayng ?</h2>
           <h6 class="text-center mb-5 x">Opinion from our happy customers</h6>
         </div>
-        <Carousel :autoplay="2000" :items-to-show="2.5" :wrap-around="true">
+        <Carousel
+          v-bind:="settings"
+          :autoplay="2000"
+          :wrapAround="true"
+          :transition="500"
+          :breakpoints="breakpoints"
+        >
           <Slide v-for="user in store.user" :key="user">
-            <div class="carousel__item cp" @click="slideTo(user - 1)">
-              <div class="card p-4 cp" style="width: 18rem">
+            <div class="carousel__item cp">
+              <div class="card p-4 cp">
                 <p class="card-text position-relative">
                   {{ user.text }}
                   <i class="fa-solid fa-quote-right position-absolute"></i>
                 </p>
                 <div class="box-img">
-                  <img :src="user.img" class="card-img-top" alt="..." />
+                  <img :src="user.img" class="card-img-top" :alt="user.name" />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">{{ user.name }}</h5>
@@ -31,6 +37,11 @@
               </div>
             </div>
           </Slide>
+
+          <template #addons>
+            <Navigation />
+            <Pagination />
+          </template>
         </Carousel>
       </div>
       <!--  -->
@@ -73,13 +84,20 @@ export default {
     return {
       store,
       currentSlide: 0,
+      settings: {
+        itemsToShow: 2,
+      },
+      breakpoints: {
+        1000: {
+          itemsToShow: 3,
+        },
+        1200: {
+          itemsToShow: 4,
+        },
+      },
     };
   },
-  methods: {
-    slideTo(val) {
-      this.currentSlide = val;
-    },
-  },
+  methods: {},
 };
 </script>
 
@@ -100,6 +118,7 @@ export default {
   margin-top: 100px;
   height: calc(100vh - 100px);
   background-image: url(../../images/comment-bg-autocar.jpg);
+  background-repeat: no-repeat;
 }
 
 .card {

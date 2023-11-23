@@ -220,7 +220,7 @@ export const store = reactive({
     {
       id: "2",
       name: "Adam",
-      img: "../../public/images/man1.png",
+      img: "../../images/man1.png",
       text: " We are a gallery vehicle dealer. Before we met this site, our sales were sluggish.",
     },
     {
@@ -232,18 +232,18 @@ export const store = reactive({
     {
       id: "4",
       name: "Robert",
-      img: "../../public/images/man2.png",
+      img: "../../images/man2.png",
       text: "I was trying to sell my car. And I put it here and sold it for more than it was worth.",
     },
   ],
   cardCars: [
     {
-      img: "../../public/images/news-autocar-1-300x180.jpg",
+      img: "../../images/news-autocar-1-300x180.jpg",
       title: "How solid is Audi?",
       text: "According to Euro NCAP data with different test organizations, there",
     },
     {
-      img: "../../public/images/news-autocar-6-300x180.jpg",
+      img: "../../images/news-autocar-6-300x180.jpg",
       title: "What Brand is Skoda?",
       text: "Skoda is one of the leading automotive manufacturers on the",
     },
