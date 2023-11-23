@@ -6,6 +6,7 @@
     <h3>Resent Articles</h3>
     <h6>Useful infromation about car</h6>
   </section>
+
   <Carousel
     :autoplay="2000"
     :itemsToShow="3"
@@ -30,12 +31,14 @@
 <script>
 import { Carousel, Slide } from "vue3-carousel";
 import { store } from "./../../data/store.js";
+import CarouselTest from "./CarouselTest.vue";
 export default {
   name: "LittleCard",
   components: {
     Carousel,
     Slide,
     Navigation,
+    CarouselTest,
   },
   props: ["img", "title", "text"],
   data() {

@@ -83,16 +83,18 @@ export default {
   data() {
     return {
       store,
-      currentSlide: 0,
       settings: {
-        itemsToShow: 2,
+        itemsToShow: 1,
       },
       breakpoints: {
+        400: {
+          itemsToShow: 2,
+        },
         1000: {
           itemsToShow: 3,
         },
         1200: {
-          itemsToShow: 4,
+          itemsToShow: 3,
         },
       },
     };
