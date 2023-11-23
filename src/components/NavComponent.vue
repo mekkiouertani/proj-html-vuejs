@@ -40,8 +40,15 @@
               </div>
               <p class="tit long">My account</p>
             </button>
+
+            <button class="d-flex align-items-center">
+              <div class="imgg">
+                <img src="../images/add.png" alt="png" class="mbb" />
+              </div>
+              <p class="tit">Add</p>
+            </button>
             <i
-              class="fa-solid fa-bars fs-1 d-sm-none d-xl-block"
+              class="fa-solid fa-bars fs-1 mx-2 my-3 d-sm-none d-xl-block"
               data-bs-toggle="offcanvas"
               href="#offcanvasExample"
               role="button"
@@ -49,9 +56,9 @@
             ></i>
             <button class="d-flex align-items-center">
               <div class="imgg">
-                <img src="../images/add.png" alt="png" class="mbb" />
+                <img src="../images/headphones.png" alt="png" class="mbb" />
               </div>
-              <p class="tit">Add</p>
+              <p class="tit">+1 (234) 567 89 10</p>
             </button>
           </div>
 
@@ -155,13 +162,13 @@ button {
   margin-right: 10px;
   font-weight: 800;
   img {
-    height: 40px;
+    width: 30px;
     filter: invert(1);
   }
 }
 .imgg {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   img {
     width: 100%;
     height: 100%;

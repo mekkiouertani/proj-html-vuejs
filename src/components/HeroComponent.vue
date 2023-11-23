@@ -11,7 +11,7 @@
           v-for="(el, index) in store.heroImages"
         >
           <!-- title -->
-          <div class="position-absolute">
+          <div class="titlee position-absolute">
             <h2 clas>{{ el.title }}</h2>
             <h5>Find the right prince and dealer.</h5>
             <p>Learn More <i class="fa-solid fa-arrow-right"></i></p>
@@ -92,6 +92,23 @@ section {
     display: inline-block;
     padding: 20px 30px;
     border-radius: 5px;
+  }
+}
+@media (min-width: 300px) {
+  h2 {
+    font-size: 0.8em;
+  }
+  .position-absolute {
+    top: 20px !important;
+  }
+}
+@media (min-width: 500px) {
+  h2 {
+    font-size: 1em;
+  }
+  .position-absolute {
+    top: 35% !important;
+    left: 20%;
   }
 }
 </style>
