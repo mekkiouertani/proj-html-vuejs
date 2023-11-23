@@ -5,8 +5,10 @@
         <!-- LEFT -->
         <!-- logo left -->
         <div class="left col-md-12 col-lg-3 mt-5">
-          <div class="med justify-content-between align-items-center">
-            <div class="logo mb-3">
+          <div
+            class="med justify-content-between align-items-center align-content-center"
+          >
+            <div class="logo mb-3 text-center">
               <img src="../images/logo-footer-autocar11.png" alt="" />
             </div>
             <!-- ul left -->
@@ -18,7 +20,7 @@
             </ul>
           </div>
           <!-- icon left -->
-          <div class="text-center">
+          <div class="d-flex justify-content-evenly">
             <i class="px-3 fs-3 fa-brands fa-facebook"></i>
             <i class="px-3 fs-3 fa-brands fa-instagram"></i>
             <i class="px-3 fs-3 fa-brands fa-twitter"></i>
@@ -90,6 +92,9 @@ ul {
       object-fit: cover;
     }
   }
+}
+.logo {
+  margin: auto;
 }
 .middle {
   flex-grow: 1;

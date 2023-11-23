@@ -33,20 +33,20 @@
               </li>
             </ul>
           </ul>
-          <button class="d-flex align-items-center">
+          <button class="d-flex align-items-center d-md-none d-xl-flex">
             <div class="imgg">
               <img src="../images/padlock.png" alt="png" class="mbb" />
             </div>
             <p class="mx-2 tit long">My account</p>
           </button>
           <i
-            class="fa-solid fa-bars fs-1"
+            class="fa-solid fa-bars fs-1 d-md-none d-xl-block"
             data-bs-toggle="offcanvas"
             href="#offcanvasExample"
             role="button"
             aria-controls="offcanvasExample"
           ></i>
-          <button class="d-flex align-items-center">
+          <button class="d-flex align-items-center d-md-none d-xl-flex">
             <div class="imgg">
               <img src="../images/add.png" alt="png" class="mbb" />
             </div>
